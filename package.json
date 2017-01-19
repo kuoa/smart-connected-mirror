@@ -1,0 +1,21 @@
+{
+  "name": "smart-mirror-server",
+  "version": "1.0.0",
+  "description": "A smart mirror",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/kuoa/smart-mirror-server",
+  "keywords": [
+    "smart",
+    "mirror",
+    "electron"
+  ],
+
+  "author": "kuoa",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
