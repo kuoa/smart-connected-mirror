@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+html {
+    cursor: none;
+    overflow: hidden;
+    font-size: 12px;
+
+}
+
+body {
+    
+    background-color: rgba(33,33,33,1.0);
+
+    font-family: 'Roboto';
+    color: rgb(255,255,255);
+
+    margin: 60px;
+
+    font-size: 2em;
+    line-height: 1.5em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.title {
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+.sub-title {
+    font-size: 0.8em;
+    margin-bottom: -10px;
+}
+
+.icons {
+    display: inline;
+}
+
+#weather-panel {
+
+}
+
+#clock-panel {
+    padding-top: 13px;
+}
+
+#metro-panel {
+    padding-top: 300px;
+}
+
+#transport-panel {
+    padding-top: 100px;
+    padding-left: 219.5px;
+}
+

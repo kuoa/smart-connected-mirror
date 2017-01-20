@@ -4,14 +4,69 @@
     <meta charset="UTF-8">
     <title>Hello World!</title>
 
-    <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/mirror.css" rel="stylesheet">
 
   </head>
-  <body>
 
-  <h1></h1>
-    
+  <body>
+    <div class="row">
+      <div class="col-md-6 text-left" id="weather-panel">
+        <span class="title">-4˚</span>
+
+        <figure class="icons">
+          <canvas id="weather-icon" width="64" height="64" class="wind">
+          </canvas>
+        </figure>
+
+        <p class="sub-title">Vent Fort.</p>
+        <p class="sub-title">Venté durant toute la journée.</p>
+      </div>
+
+      <div class="col-md-6 text-right" id="clock-panel">
+        <span class="title">22:40</span>
+
+        <p class="sub-title">Lundi</p>
+        <p class="sub-title">10 janvier 2017</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 text-right">
+
+      </div>
+      <div class="col-md-6" id="transport-panel">
+
+        <div class="line-schedule">
+          <i class="fa fa-subway" aria-hidden="true"></i>
+          <span class="sub-title">6</span>
+          <span class="sub-title">Directon</span>
+        </div>
+
+        <div class="line-schedule">
+          <i class="fa fa-subway" aria-hidden="true"></i>
+          <span class="sub-title">6</span>
+          <span class="sub-title">Super Direction</span>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="row">
+
+      <div class="col-md-12 text-center" id="metro-panel">
+
+        <p class="sub-title">Lundi</p>
+        <p class="sub-title">10 janvier 2017</p>
+      </div>
+    </div>
+
+
+
+    </div>
+
   </body>
 
   <!-- External libs fix -->
@@ -20,9 +75,11 @@
 
   <script src="libs/jquery.min.js"></script>
   <script src="libs/bootstrap.min.js"></script>
+  <script src="libs/skycons.js"></script>
 
   <script>
-    require('./renderer.js')
+    require('./js/api');
+    require('./js/weather.js');
   </script>
 
   <script>if (window.module) module = window.module;</script>
