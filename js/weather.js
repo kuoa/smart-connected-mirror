@@ -2,26 +2,116 @@
  * Created by kuoa on 1/20/17.
  */
 
-var skycons = new Skycons({"color": "white"});
+const weatherUrl = 'https://darksky.net';
+const skycons = new Skycons({"color": "white"});
 
+/*milli seconds*/
+const fadeValue = 600;
 
+/* hours */
+const updateInterval = 1;
 
-// you can add a canvas by it's ID...
 skycons.add("weather-icon", Skycons.PARTLY_CLOUDY_NIGHT);
-
-// ...or by the canvas DOM element itself.
-//skycons.add(document.getElementById("icon2"), Skycons.RAIN);
-
-// if you're using the Forecast API, you can also supply
-// strings: "partly-cloudy-day" or "rain".
-
-// start animation!
 skycons.play();
 
-// you can also halt animation with skycons.pause()
+function displayWeatherIcon(name) {
 
-// want to change the icon? no problem:
-//skycons.set("icon1", Skycons.PARTLY_CLOUDY_NIGHT);
+    var icon;
 
-// want to remove one altogether? no problem:
-//skycons.remove("icon2");
+    switch (name) {
+        case 'clear-day':
+            icon = Skycons.CLEAR_DAY;
+            break;
+
+        case 'clear-night':
+            icon = Skycons.CLEAR_NIGHT;
+            break;
+
+        case 'rain':
+            icon = Skycons.RAIN;
+            break;
+
+        case 'snow':
+            icon = Skycons.SNOW;
+            break;
+
+        case 'sleet':
+            icon = Skycons.SLEET;
+            break;
+
+        case 'wind':
+            icon = Skycons.WIND;
+            break;
+
+        case 'fog':
+            icon = Skycons.FOG;
+            break;
+
+        case 'cloudy':
+            icon = Skycons.FOG;
+            break;
+
+        case 'partly-cloudy-day':
+            icon = Skycons.PARTLY_CLOUDY_DAY;
+            break;
+
+        case 'partly-cloudy-night':
+            icon = Skycons.PARTLY_CLOUDY_NIGHT;
+            break;
+
+        default :
+            icon = Skycons.CLEAR_DAY;
+    }
+
+    $('#weather-icon').fadeOut(fadeValue, function () {
+        skycons.set("weather-icon", icon);
+        $(this).fadeIn(fadeValue);
+    });
+}
+
+function displayWeather(html){
+    var jHtml = $.parseHTML(html),
+        data = $(jHtml).find('#title'),
+        icon = $(data).find('canvas').attr('class'),
+        temp = $(data).find('.temp').text(),
+        hourSummary = $(data).find('.summary').text(),
+        daySummary = $(data).find('.next').text().trim();
+
+    displayWeatherIcon(icon);
+
+    $('#temperature').fadeOut(fadeValue, function () {
+        $(this).text(temp).fadeIn(fadeValue);
+    });
+
+    $('#hour-summary').fadeOut(fadeValue, function () {
+        $(this).text(hourSummary).fadeIn(fadeValue);
+    });
+
+    $('#day-summary').fadeOut(fadeValue, function () {
+        $(this).text(daySummary).fadeIn(fadeValue);
+    });
+}
+
+function getWeatherStatus(successHandler, errorHandler){
+
+    $.ajax({
+        url: weatherUrl,
+        type: 'GET',
+        success: function(html){
+
+            /* remove images to avoid net::ERR_FILE_NOT_FOUND */
+            html = html.replace(/<img\b[^>]*>/ig, '');
+            successHandler(html);
+        },
+        error: errorHandler
+    });
+}
+
+/* get current weather */
+getWeatherStatus(displayWeather);
+
+/* update  */
+setInterval(function(){
+    getWeatherStatus(displayWeather);
+    console.log("Weather updated");
+}, updateInterval * 60 * 60 * 1000);

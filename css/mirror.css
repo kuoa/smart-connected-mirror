@@ -18,6 +18,7 @@ body {
     font-size: 2em;
     line-height: 1.5em;
     -webkit-font-smoothing: antialiased;
+
 }
 
 .title {
@@ -38,6 +39,12 @@ body {
 .news-short{
     margin-top: 10px;
     font-size: 0.7em;
+    line-height: 1.3em;
+}
+
+.sub-sub-title{
+    margin-top: 10px;
+    font-size: 0.8em;
     line-height: 1.3em;
 }
 
@@ -71,11 +78,10 @@ body {
 }
 
 #day-summary {
-    width: 500px;
 }
 
 #weather-panel {
-
+    height: 300px;
 }
 
 #clock-panel {
@@ -83,7 +89,6 @@ body {
 }
 
 #message-panel {
-    margin-top: 210px;
     height: 300px;
 }
 
