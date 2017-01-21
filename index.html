@@ -1,86 +1,194 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/mirror.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/mirror.css" rel="stylesheet">
 
-  </head>
+    </head>
 
-  <body>
-    <div class="row">
-      <div class="col-md-6 text-left" id="weather-panel">
-        <span class="title">-4˚</span>
+    <body>
+        <div class="row">
+            <div class="col-xs-6 text-left" id="weather-panel">
+                <div>
+                    <span class="title" id="temperature">-4˚</span>
 
-        <figure class="icons">
-          <canvas id="weather-icon" width="64" height="64" class="wind">
-          </canvas>
-        </figure>
+                    <figure class="icons">
+                        <canvas id="weather-icon" width="64" height="64" class="wind">
+                        </canvas>
+                    </figure>
 
-        <p class="sub-title">Vent Fort.</p>
-        <p class="sub-title">Venté durant toute la journée.</p>
-      </div>
+                    <p class="sub-title" id="hour-summary">Vent Fort.</p>
+                    <p class="sub-title" id="day-summary">Venté durant toute la journée.</p>
+                </div>
+            </div>
 
-      <div class="col-md-6 text-right" id="clock-panel">
-        <span class="title">22:40</span>
+            <div class="col-xs-6 text-right" id="clock-panel">
+                <div>
+                    <span class="title">22:40</span>
 
-        <p class="sub-title">Lundi</p>
-        <p class="sub-title">10 janvier 2017</p>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6 text-right">
-
-      </div>
-      <div class="col-md-6" id="transport-panel">
-
-        <div class="line-schedule">
-          <i class="fa fa-subway" aria-hidden="true"></i>
-          <span class="sub-title">6</span>
-          <span class="sub-title">Directon</span>
-        </div>
-
-        <div class="line-schedule">
-          <i class="fa fa-subway" aria-hidden="true"></i>
-          <span class="sub-title">6</span>
-          <span class="sub-title">Super Direction</span>
+                    <p class="sub-title">Lundi</p>
+                    <p class="sub-title">10 janvier 2017</p>
+                </div>
+            </div>
         </div>
 
 
-      </div>
-    </div>
+        <div class="row">
+            <div class="col-md-12 text-center" id="message-panel">
+                <div>
+                    <p class="center-message">Hello pretty face!</p>
+                    <p class="center-message">You look crazy beautiful today.</p>
+                    <i class="fa fa-heart" aria-hidden="true"></i>
 
-    <div class="row">
-
-      <div class="col-md-12 text-center" id="metro-panel">
-
-        <p class="sub-title">Lundi</p>
-        <p class="sub-title">10 janvier 2017</p>
-      </div>
-    </div>
-
+                </div>
+            </div>
+        </div>
 
 
-    </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="text-left">
 
-  </body>
+                    <div class="news-panel">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <span class="sub-title">Climate Data Preservation Efforts</span>
+                        <div class="news-field">
+                            <p class="news-short">Donald Trump has been forced to hand over his old phone for a
+                                more secure device—which might make</p>
+                        </div>
+                    </div>
 
-  <!-- External libs fix -->
+                    <div class="news-panel">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <span class="sub-title">Climate Data Preservation Efforts</span>
+                        <div class="news-field">
+                            <p class="news-short">Donald Trump has been forced to hand over his old phone for a
+                                more secure device—which might make</p>
+                        </div>
+                    </div>
 
-  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+                    <div class="news-panel">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <span class="sub-title">Climate Data Preservation Efforts</span>
+                        <div class="news-field">
+                            <p class="news-short">Donald Trump has been forced to hand over his old phone for a
+                                more secure device—which might make </p>
+                        </div>
+                    </div>
 
-  <script src="libs/jquery.min.js"></script>
-  <script src="libs/bootstrap.min.js"></script>
-  <script src="libs/skycons.js"></script>
+                    <div class="news-panel">
+                        <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+                        <span class="sub-title">Climate Data Preservation Efforts</span>
+                        <div class="news-field">
+                            <p class="news-short">Donald Trump has been forced to hand over his old phone for a
+                                more secure device—which might make</p>
+                        </div>
+                    </div>
 
-  <script>
-    require('./js/api');
-    require('./js/weather.js');
-  </script>
+                </div>
+            </div>
 
-  <script>if (window.module) module = window.module;</script>
+            <div class="col-xs-6" id="metro-panel">
+                <div class="text-right">
+
+                    <div class="line-schedule">
+                        <i class="fa fa-subway" aria-hidden="true"></i>
+                        <span class="sub-title">6 Nation</span>
+                        <div class="transport-timetable">
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">Train a l'approche</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">10mn</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">22mn</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="line-schedule">
+                        <i class="fa fa-subway" aria-hidden="true"></i>
+                        <span class="sub-title">6 Nation</span>
+                        <div class="transport-timetable">
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">1mn</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">2mn</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">6mn</span>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="line-schedule">
+                        <i class="fa fa-bus" aria-hidden="true"></i>
+                        <span class="sub-title">222 Blalbas</span>
+                        <div class="transport-timetable">
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">1mn</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">7mn</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">9mn</span>
+                            </span>
+                        </div>
+                    </div>
+
+
+                    <div class="line-schedule">
+                        <i class="fa fa-bus" aria-hidden="true"></i>
+                        <span class="sub-title">17 Nation</span>
+                        <div class="transport-timetable">
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">1mn</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">5mn</span>
+                            </span>
+                            <span>
+                                <i class="fa fa-clock-o time-icon" aria-hidden="true"></i>
+                                <span class="transport-time">11mn</span>
+                            </span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+
+    <!-- External libs fix -->
+
+    <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="libs/skycons.js"></script>
+
+    <script>
+        require('./js/weather.js');
+    </script>
+
+    <script>if (window.module) module = window.module;</script>
 </html>
