@@ -110,6 +110,7 @@ function getWeatherStatus(successHandler, errorHandler){
 /* get current weather */
 getWeatherStatus(displayWeather);
 
+
 /* update  */
 setInterval(function(){
     getWeatherStatus(displayWeather);

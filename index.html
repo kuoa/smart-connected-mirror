@@ -28,10 +28,11 @@
 
             <div class="col-xs-6 text-right" id="clock-panel">
                 <div>
-                    <span class="title">22:40</span>
-
-                    <p class="sub-title">Lundi</p>
-                    <p class="sub-sub-title">10 janvier 2017</p>
+                    <span class="title" id="hour">22</span>                    
+                    <span class="title" id="separator">:</span>
+                    <span class="title" id="minutes">10</span>
+                    <p class="sub-title" id="day">Lundi</p>
+                    <p class="sub-sub-title" id="date">10 janvier 2017</p>
                 </div>
             </div>
         </div>
@@ -188,6 +189,7 @@
 
     <script>
         require('./js/weather.js');
+        require('./js/clock.js');
     </script>
 
     <script>if (window.module) module = window.module;</script>

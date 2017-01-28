@@ -12,10 +12,12 @@
     "mirror",
     "electron"
   ],
-
   "author": "kuoa",
   "license": "MIT",
   "devDependencies": {
     "electron": "^1.4.1"
+  },
+  "dependencies": {
+    "@types/jquery": "^2.0.39"
   }
 }
