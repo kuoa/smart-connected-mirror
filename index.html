@@ -53,65 +53,14 @@
 
     <div class="row">
         <div class="col-xs-6">
-            <div class="text-left">
-
-                <div class="news-panel">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    <span class="sub-title">Climate Data Preservation Efforts</span>
-                    <div class="news-field">
-                        <p class="news-short">Donald Trump has been forced to hand over his old phone for a more secure device—which might make</p>
-                    </div>
-                </div>
-
-                <div class="news-panel">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    <span class="sub-title">Climate Data Preservation Efforts</span>
-                    <div class="news-field">
-                        <p class="news-short">Donald Trump has been forced to hand over his old phone for a more secure device—which might make</p>
-                    </div>
-                </div>
-
-                <div class="news-panel">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    <span class="sub-title">Climate Data Preservation Efforts</span>
-                    <div class="news-field">
-                        <p class="news-short">Donald Trump has been forced to hand over his old phone for a more secure device—which might make
-                        </p>
-                    </div>
-                </div>
-
-                <div class="news-panel">
-                    <i class="fa fa-newspaper-o" aria-hidden="true"></i>
-                    <span class="sub-title">Climate Data Preservation Efforts</span>
-                    <div class="news-field">
-                        <p class="news-short">Donald Trump has been forced to hand over his old phone for a more secure device—which might make</p>
-                    </div>
-                </div>
-
-            </div>
+            <div class="text-left" id="news-panel"></div>
         </div>
 
         <div class="col-xs-6" id="transport-panel">  
-            <div class="line-schedule text-right" id="transport0">                
-                <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>
-                    <span class="sr-only">Loading...</span>
-            </div>
-
-            <div class="line-schedule text-right" id="transport1">                
-                <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>
-                    <span class="sr-only">Loading...</span>
-            </div>
-
-            <div class="line-schedule text-right" id="transport2">                
-                <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>
-                    <span class="sr-only">Loading...</span>
-            </div>
-            <div class="line-schedule text-right" id="transport3">                
-                <i class="fa fa-spinner fa-pulse fa-1x fa-fw"></i>
-                    <span class="sr-only">Loading...</span>
-            </div>
-           
-                                    
+            <div class="line-schedule text-right" id="transport0"></div>
+            <div class="line-schedule text-right" id="transport1"></div>
+            <div class="line-schedule text-right" id="transport2"></div>                                    
+            <div class="line-schedule text-right" id="transport3"></div>
         </div>
     </div>
 </body>
@@ -127,7 +76,8 @@
 <script>
     require('./js/weather.js');
     require('./js/clock.js');
-    require('./js/transport.js');
+    require('./js/news.js');
+    require('./js/transport.js');    
 </script>
 
 <script>if (window.module) module = window.module;</script>
