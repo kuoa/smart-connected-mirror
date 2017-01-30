@@ -82,6 +82,7 @@ body {
 
 #weather-panel {
     height: 300px;
+    height: 100px;
 }
 
 #clock-panel {
@@ -90,13 +91,14 @@ body {
 
 #message-panel {
     height: 300px;
+    height: 100px;
 }
 
 #news-panel{
     height: 280px;
 }
 
-#metro-panel {
+#transport-panel {
     height: 280px;
 }
 

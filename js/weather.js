@@ -70,6 +70,7 @@ function displayWeatherIcon(name) {
 }
 
 function displayWeather(html){
+    
     var jHtml = $.parseHTML(html),
         data = $(jHtml).find('#title'),
         icon = $(data).find('canvas').attr('class'),
@@ -113,6 +114,5 @@ getWeatherStatus(displayWeather);
 
 /* update  */
 setInterval(function(){
-    getWeatherStatus(displayWeather);
-    console.log("Weather updated");
+    getWeatherStatus(displayWeather);    
 }, updateInterval * 60 * 60 * 1000);

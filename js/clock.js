@@ -15,6 +15,7 @@ const separatorFadeValue = 3000;
 const updateInterval = 10;
 
 function format(i) {
+
     if (i < 10) {
         i = "0" + i;
     }
@@ -22,17 +23,21 @@ function format(i) {
 }
 
 function getTime() {
+
     var today = new Date(),
         h = today.getHours();
         m = today.getMinutes();
         s = today.getSeconds();
 
+    h = format(h);
     m = format(m);
     s = format(s);
     
-    return {"hour" : h,
-            "minutes" : m,
-            "seconds" : s};
+    return {
+        hour : h,
+        minutes : m,
+        seconds : s 
+    };
 }
 
 function getDate(){
@@ -43,13 +48,16 @@ function getDate(){
         dayNb = date.getDate(),
         dayWeek = date.getDay();
 
-    return {"day" : days[dayWeek],
-            "date" : dayNb,
-            "month" : months[month],
-            "year" : year};
+    return {
+            day : days[dayWeek],
+            date : dayNb,
+            month : months[month],
+            year : year
+        };
 }
 
 function displayClock(){    
+    
     var time = getTime();
     
     $('#hour').text(time.hour);
