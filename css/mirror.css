@@ -81,8 +81,7 @@ body {
 }
 
 #weather-panel {
-    height: 300px;
-    height: 100px;
+    height: 300px;    
 }
 
 #clock-panel {
@@ -90,8 +89,7 @@ body {
 }
 
 #message-panel {
-    height: 300px;
-    height: 100px;
+    height: 300px;    
 }
 
 #news-panel{
