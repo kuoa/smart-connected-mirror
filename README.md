@@ -1,7 +1,7 @@
 # Smart Connected Mirror
-![alt text](http://i.imgur.com/g05nqVD.png "Full")
-![alt text](http://i.imgur.com/3Rp71KT.png "Header")
-![alt text](http://i.imgur.com/uC1qAdi.jpg "Footer")
+[![alt text](https://dl.dropboxusercontent.com/u/33784152/Mirror/11.png "Full")](https://www.youtube.com/watch?v=Lbn8H-Lu2bI)
+![alt text](https://dl.dropboxusercontent.com/u/33784152/Mirror/2.png "Header")
+![alt text](https://dl.dropboxusercontent.com/u/33784152/Mirror/3.jpg "Footer")
 
 
 
@@ -102,13 +102,14 @@ Some tips you might find useful:
 	It's really not that hard, it's a really cool experience.
 
 ## Cost
-	* Mirror A3 [~ 40 €]
-	* Screen [~ 70 €]
-	* [optional] VGA to HDMI cable [~ 7 €]
-	* Wood (2 blocks 5.5 cm & 3.0 cm) [~ 10 €]
-	* Raspberri Pi [~ 33 €] https://goo.gl/l85SyE
-	* [optional] SD card [~ 8€]
-	* [optional] Power cable (2.5 A) [~ 4€] https://goo.gl/tGTXGE
+
+	*  Mirror A3 [~ 40 €]
+	*  Screen [~ 70 €]
+	*  [optional] VGA to HDMI cable [~ 7 €]
+	*  Wood (2 blocks 5.5 cm & 3.0 cm) [~ 10 €]
+	*  Raspberri Pi [~ 33 €] https://goo.gl/l85SyE
+	*  [optional] SD card [~ 8€]
+	*  [optional] Power cable (2.5 A) [~ 4€] https://goo.gl/tGTXGE
 
 ## Questions
 	* If you have any questions you can contact me by mail. ^^
