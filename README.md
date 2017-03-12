@@ -1,7 +1,7 @@
 # Smart Connected Mirror
-[![alt text](https://dl.dropboxusercontent.com/u/33784152/Mirror/11.png "Full")](https://www.youtube.com/watch?v=Lbn8H-Lu2bI)
-![alt text](https://dl.dropboxusercontent.com/u/33784152/Mirror/2.png "Header")
-![alt text](https://dl.dropboxusercontent.com/u/33784152/Mirror/3.jpg "Footer")
+[![alt text](http://i.imgur.com/qzkbgYg.png "Full")](https://www.youtube.com/watch?v=Lbn8H-Lu2bI)
+![alt text](http://i.imgur.com/qQdlxNZ.png "Header")
+![alt text](http://i.imgur.com/qQdlxNZ.png "Footer")
 
 
 
