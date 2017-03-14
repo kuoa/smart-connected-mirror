@@ -70,7 +70,7 @@ The Electron app is pretty simple, for any of the component there is a dedicated
 The libraries used are a bit of an overkill since we don't really need any of those, but I wanted to get the app up and running fast and this was a good excuse to play with new shiny things.
 
 ## Installation
-At this step the Raspbery should be connected to your screen up and running. The next step is to install the software and make it run at startup, once this is done the mirror will be complete and you will feel like a boss.
+At this step the Raspberry should be connected to your screen up and running. The next step is to install the software and make it run at startup, once this is done the mirror will be complete and you will feel like a boss.
 
 ### Electron
 You can fork this repository to get the source code. You can also star it, since we are here and we are pressing buttons. Thank you :)
@@ -94,7 +94,7 @@ Add this line with the location of your project :
 If you restart your raspberry, the script should run once the GUI has loaded.
 Some tips you might find useful:
 
-    * If you use an old screen, you might need to change the Raspbery Pi resolution or else the screen will not detect the source.
+    * If you use an old screen, you might need to change the Raspberry Pi resolution or else the screen will not detect the source.
     * If you want to turn your screen side ways (90 deg | 180 deg) you need to edit the `/boot/config.txt` file.
 
 
