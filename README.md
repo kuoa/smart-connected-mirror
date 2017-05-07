@@ -14,33 +14,33 @@ The mirror has one panel for each corner and one center panel, all five of them 
 
 The mirror has the following features:
 
-	* Weather
-		- Temperature
-		- Hourly status (ex: Mostly Cloudy)
-		- Daily status (ex: Overcast throughout the day)
-	
-	* Time 
-		- Clock
-		- Date
+* Weather
+	- Temperature
+	- Hourly status (ex: Mostly Cloudy)
+	- Daily status (ex: Overcast throughout the day)
 
-	* News 
-		- Le Monde (top four hourly news)
+* Time 
+	- Clock
+	- Date
 
-	* Transport 
-		- Paris Metro Network
-		- Paris Bus Network 
+* News 
+	- Le Monde (top four hourly news)
+
+* Transport 
+	- Paris Metro Network
+	- Paris Bus Network 
 		
-	* Center panel message
-		- Can be modified remotely, using the `NETWORK_IP:6969/message/?msg=Hello` call.
+* Center panel message
+	- Can be modified remotely, using the `NETWORK_IP:6969/message/?msg=Hello` call.
 
 ## How does it work?
 The main components are :
 
-    * A two way mirror
-    * An LCD screen
-    * A raspberry Pi
-    * A wooden frame
-    * The software
+   * A two way mirror
+   * An LCD screen
+   * A raspberry Pi
+   * A wooden frame
+   * The software
 
 ### Double way mirror 
 A double way mirror is a mirror that is partially reflective and partially transparent. When one side of the mirror is brightly lit and the other is dark, it allows viewing from the darkened side but not vice versa.
@@ -91,25 +91,27 @@ Add this line with the location of your project :
 
 ```@npm start /home/pi/projects/smart-connected-mirror```
 
+
 If you restart your raspberry, the script should run once the GUI has loaded.
 Some tips you might find useful:
 
-    * If you use an old screen, you might need to change the Raspberry Pi resolution or else the screen will not detect the source.
-    * If you want to turn your screen side ways (90 deg | 180 deg) you need to edit the `/boot/config.txt` file.
+* If you use an old screen, you might need to change the Raspberry Pi resolution or else the screen will not detect the source.
+* If you want to turn your screen side ways (90 deg | 180 deg) you need to edit the `/boot/config.txt` file.
 
 
 ##  How hard is to build my own?
-	It's really not that hard, it's a really cool experience.
+It's really not that hard, it's a really cool experience.
 
-## Cost
+## Cost 
+These were the prices in february 2017 :
 
-	*  Mirror A3 [~ 40 €]
-	*  Screen [~ 70 €]
-	*  [optional] VGA to HDMI cable [~ 7 €]
-	*  Wood (2 blocks 5.5 cm & 3.0 cm) [~ 10 €]
-	*  Raspberri Pi [~ 33 €] https://goo.gl/l85SyE
-	*  [optional] SD card [~ 8€]
-	*  [optional] Power cable (2.5 A) [~ 4€] https://goo.gl/tGTXGE
+*  Mirror A3 [~ 40 €]
+*  Screen [~ 70 €]
+*  [optional] VGA to HDMI cable [~ 7 €]
+*  Wood (2 blocks 5.5 cm & 3.0 cm) [~ 10 €]
+*  Raspberri Pi [~ 33 €] https://goo.gl/l85SyE
+*  [optional] SD card [~ 8€]
+*  [optional] Power cable (2.5 A) [~ 4€] https://goo.gl/tGTXGE
 
 ## Questions
-	* If you have any questions you can contact me by mail. ^^
+If you have any questions you can contact me by mail ^^.
