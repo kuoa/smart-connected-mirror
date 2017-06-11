@@ -6,11 +6,11 @@
 
 
 ## Introduction
-The Smart Connected Mirror is a device that looks and behaves justlike a regular mirror, but can display real time information on its surface. 
+The Smart Connected Mirror is a device that looks and behaves just like a regular mirror, but can display real time information on its surface. 
 Things like the current weather, latest news, train schedules, received emails and almost anything else that you can imagine.
 
 ## Current features
-The mirror has one panel for each corner and one center panel, all five of them can be configured to display any type of information that you find useful. You can either use an api or parse yourself the service you are interested in. Some Javascript hacking is involved.
+The mirror has one panel for each corner and one center panel, all five of them can be configured to display any type of information that you find useful. You can either use an API or parse yourself the service you are interested in. Some Javascript hacking is involved.
 
 The mirror has the following features:
 
