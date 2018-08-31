@@ -1,7 +1,5 @@
 # Smart Connected Mirror
 [![alt text](http://i.imgur.com/qzkbgYg.png "Full")](https://www.youtube.com/watch?v=Lbn8H-Lu2bI)
-![alt text](http://i.imgur.com/qQdlxNZ.png "Header")
-![alt text](http://i.imgur.com/hxYW11P.jpg "Footer")
 
 
 
