@@ -1,7 +1,7 @@
 # Smart Connected Mirror
-[![alt text](http://i.imgur.com/qzkbgYg.png "Full")](https://www.youtube.com/watch?v=Lbn8H-Lu2bI)
-
-
+<a href="https://www.youtube.com/watch?v=Lbn8H-Lu2bI" target="_blank">
+	<img src="http://i.imgur.com/qzkbgYg.png" alt="Youtube Video" width="500"/>
+</a>
 
 ## Introduction
 The Smart Connected Mirror is a device that looks and behaves just like a regular mirror, but can display real time information on its surface. 
